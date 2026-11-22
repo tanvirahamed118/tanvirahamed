@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { ArrowUpRight, Sun, Moon } from "lucide-react";
 import { CODE_LINES, ME, SERVICES, STACK, STEPS, WORK } from "./data";
 import { CountUp, Reveal } from "./components/Reveal";
+import Logo from "../public/logo.png";
 
 type Theme = "dark" | "light";
 function getInitialTheme(): Theme {
@@ -130,7 +131,7 @@ export default function App() {
       <nav className="site-nav">
         <div className="nav-inner">
           <a href="#top" className="logo" aria-label="Tanvir Ahamed home">
-            <img src="/logo.png" alt="Tanvir Ahamed" />
+            <img src={Logo} alt="Tanvir Ahamed" />
           </a>
           <div className="nav-links">
             <a href="#services">Services</a>
